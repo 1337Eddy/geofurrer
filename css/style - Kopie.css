@@ -1,0 +1,342 @@
+/*
+Name: style.css
+Beschreibung: CSS-Datei
+Version: 1.0
+*/
+
+/* ################ STANDARDEINSTELLUNGEN ################### */
+body{
+    font-family: sans-serif;
+    background-color: #e3e3e3;
+}
+
+
+h1, p {
+    margin: 0;
+}
+
+/* ################ HEADER ################### */
+
+/* Header ---------- */
+header{
+    width:100%;
+    background-color: rgb(255, 255, 255);
+}
+
+header .flex-box-sm {
+    height: 110px;
+    align-items: center;
+}
+
+/* Logo ---------- */
+header .logo img{
+    height: 95px;
+}
+
+/* Menu-Button ---------- */
+header .menu .mobile-button {
+    display: none;
+}
+
+/* Menü ---------- */
+header .menu{ 
+    text-align: right;
+    font-size: 20px;
+}
+
+header .menu  ul  li {                    
+    list-style: none;
+    display: inline;
+    margin: 0 0 0 35px; 
+}
+
+header .menu  ul  li  ul {               /* test */
+    display: none;
+}
+
+header .menu ul li:first-child {
+    margin: 0;
+}
+
+header .menu ul li a{
+    color: rgb(255, 128, 0);
+    white-space: nowrap;
+    text-decoration: none;
+    transition: all 500ms;
+    border-bottom: solid 1px rgb(255, 255, 255, 0);
+    position: relative;
+    top: 0;
+}
+
+header .menu ul li a:hover {
+    border-bottom: solid 1px rgb(255, 128, 0, 0.15);
+    top: 3px;
+}
+
+header .menu  ul  li:hover  ul {              /* test */
+    display:block;
+    position: absolute;
+}                        
+
+header .menu  ul  li  ul  li {                  /* test */
+    position: relative;
+}
+
+/* ################ BANNER & INHALT ################### */
+
+/* Banner ---------- */
+.banner {
+    width: 100%;
+    height: 400px;
+    background-image: url(../images/foto.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;              /* komplette Fläche wird mit dem Bild ausgefüllt */
+    background-position: center;         /* Bild orientiert sich in der Mitte beim Verschieben der Fenstergröße */
+}
+
+.banner .overlay{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(227,227,227, 0.01) 20%, rgba(227,227,227, 0.8) 100%)
+}
+
+.banner h1{
+    text-align: center;
+    color: rgba(255, 255, 255, 0.9);
+    font-family: 'Satisfy', cursive;
+    font-size: 70px;
+    padding-top: 100px;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+}
+
+/* ---------------------------------------------------------- Banner Laserscanning ---------------------------------------------------------------- */
+.banner_laser {
+    width: 100%;
+    height: 400px;
+    background-image: url(../images/titelbild_laser.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;              /* komplette Fläche wird mit dem Bild ausgefüllt */
+    background-position: center;         /* Bild orientiert sich in der Mitte beim Verschieben der Fenstergröße */
+}
+
+.banner_laser .overlay{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(227,227,227, 0.01) 20%, rgba(227,227,227, 0.8) 100%)
+}
+
+.banner_laser h1{
+    text-align: center;
+    color: rgba(255, 255, 255, 0.9);
+    font-family: 'Satisfy', cursive;
+    font-size: 70px;
+    padding-top: 100px;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+}
+
+
+/* Inhalt ---------- */
+.inhalt .flex-box-sm {
+    background-color: #fff;
+    margin: -60px 15px 60px 15px;
+    padding: 40px 15px 40px 15px;
+    width: auto;
+    box-shadow: 0 0 0 15px 0 rgba(0, 0, 0, 0.25);
+}
+
+.inhalt .sm-box-04 {
+    margin: -60px 15px 60px 15px;
+    padding: 40px 15px 40px 15px;
+}
+
+.inhalt .tabelle ul {           
+    display: block;
+}
+                                                            /* --Anfang-- Hover für die Icons auf leistungen.html ---------- */
+.hovertitle {
+  color: #fff;
+  display: inline-block;
+  font-family: sans-serif;
+  font-size: 24px;
+  margin-left: 70px;
+  max-width: 384px;
+  min-width: 230px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.hovertitle * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.45s ease;
+  transition: all 0.45s ease;
+}
+
+.hovertitle:before,
+.hovertitle:after {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-top: 50px solid rgba(0, 0, 0, 0.5);
+  border-bottom: 50px solid rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: '';
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  z-index: 1;
+  opacity: 0;
+}
+
+.hovertitle:before {
+  -webkit-transform: scaleY(2);
+  transform: scaleY(2);
+}
+
+.hovertitle:after {
+  -webkit-transform: scaleY(2);
+  transform: scaleY(2);
+}
+
+.hovertitle img {
+  vertical-align: top;
+  max-width: 100%;
+  backface-visibility: hidden;
+}
+
+.hovertitle figcaption {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  align-items: center;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.1em;
+  opacity: 0;
+  z-index: 2;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.hovertitle h3 {
+  font-size: 1em;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.hovertitle h3 span {
+  display: block;
+  font-weight: 700;
+}
+
+.hovertitle a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+}
+
+.hovertitle:hover > img,
+.hovertitle.hover > img {
+  opacity: 0.7;
+}
+
+.hovertitle:hover:before,
+.hovertitle.hover:before,
+.hovertitle:hover:after,
+.hovertitle.hover:after {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+}
+
+.hovertitle:hover figcaption,
+.hovertitle.hover figcaption {
+  opacity: 1;
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+                                                            /* --Ende-- Hover für die Icons auf leistungen.html ---------- *
+
+
+/* ---- zwei Bilder nebeneinander ---------- */
+.nebeneinander {
+  display: inline-block;
+  font-family: sans-serif;
+  font-size: 12px;
+  margin-left: 70px;
+  max-width: 384px;
+  min-width: 230px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.nebeneinander figcaption {
+    padding: 10px;
+    text-align: center;
+}
+
+.inhalt p {
+    text-align: justify;
+    color: #444444;
+    line-height: 1.5;    
+}
+
+.karte{
+   padding-left: 150px;
+}
+
+
+/* ################# FOOTER ################# */
+footer {
+    width: 100%;
+    background-color: rgb(255, 128, 0);
+    color: #fff;
+}
+footer .flex-box-sm {
+    height: 45px;
+    align-items: center;
+}
+footer .rechtliches {
+    text-align: right;
+}
+footer .rechtliches ul li {
+    margin-left:10px;
+    list-style: none;
+    display: inline;
+}
+footer .rechtliches ul li:last-child {
+    margin-left: 10px;
+}
+footer .rechtliches ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+footer .rechtliches ul li a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+#map {
+	top: 75px;
+	bottom: 10%;
+	left: 5%;
+	right: 5%;
+	height: 75%;
+	width: 90%;
+}
