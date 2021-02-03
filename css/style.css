@@ -229,6 +229,18 @@ header .menu ul li ul li {
 }
 
 
+/* Bootstrap Zeugs*/
+
+.container {
+    background-color: #fff;
+}
+
+.content {
+    margin-top: -60px;
+    padding-bottom: 60px;
+}
+
+
 /* ---------Anfang-- Hover für die Icons auf leistungen.html ---------- */
 
 .hovertitle {
