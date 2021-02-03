@@ -185,43 +185,6 @@ header .menu ul li ul li {
 
 /* ---- zwei Bilder nebeneinander ---------- */
 
-.nebeneinander {
-    display: inline-block;
-    font-family: sans-serif;
-    font-size: 12px;
-    margin-left: 70px;
-    max-width: 384px;
-    min-width: 230px;
-    overflow: hidden;
-    position: relative;
-    text-align: center;
-    width: 100%;
-}
-
-.nebeneinander figcaption {
-    padding: 10px;
-    text-align: center;
-}
-
-.inhalt p {
-    text-align: justify;
-    color: #444444;
-    line-height: 1.5;
-}
-
-.karte {
-    padding-left: 150px;
-}
-
-#map {
-    top: 50px;
-    bottom: 10%;
-    left: 5%;
-    right: 5%;
-    height: 80%;
-    width: 90%;
-}
-
 
 /* ################# FOOTER ################# */
 
