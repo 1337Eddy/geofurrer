@@ -1,0 +1,27 @@
+/* ---------------------------------------------------------- Banner Laserscanning ---------------------------------------------------------------- */
+
+.banner_laser {
+    width: 100%;
+    height: 400px;
+    background-image: url(../images/titelbild_laser.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* komplette Fläche wird mit dem Bild ausgefüllt */
+    background-position: center;
+    /* Bild orientiert sich in der Mitte beim Verschieben der Fenstergröße */
+}
+
+.banner_laser .overlay {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(227, 227, 227, 0.01) 20%, rgba(227, 227, 227, 0.8) 100%)
+}
+
+.banner_laser h1 {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.9);
+    font-family: 'Satisfy', cursive;
+    font-size: 70px;
+    padding-top: 100px;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+}

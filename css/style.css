@@ -49,11 +49,11 @@ header .flex-box-sm {
 /* Logo ---------- */
 
 header .logo img {
-    height: 95px;
+    height: 85px;
 }
 
 #logo {
-    height: 95px;
+    height: 85px;
     align-items: center;
 }
 
