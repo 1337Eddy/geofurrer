@@ -146,6 +146,15 @@ header .menu ul li ul li {
     text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
 }
 
+.banner h2 {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.9);
+    font-family: 'Satisfy', cursive;
+    font-size: 60px;
+    padding-top: 100px;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+}
+
 
 /*------------- Inhalt ---------- */
 
